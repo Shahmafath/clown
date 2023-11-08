@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auros</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- font awesome cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- AOS animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@100&family=Bebas+Neue&family=Cedarville+Cursive&family=Chakra+Petch:wght@300&family=DM+Serif+Display&family=Dancing+Script&family=Dela+Gothic+One&family=Fuggles&family=Gabarito&family=Gruppo&family=IBM+Plex+Mono:wght@100&family=Inconsolata:wght@300&family=Kanit:ital,wght@0,200;1,100&family=Major+Mono+Display&family=Monoton&family=Mooli&family=PT+Serif&family=Pinyon+Script&family=Playfair+Display:ital@0;1&family=Playpen+Sans:wght@100&family=Poppins:wght@100&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Raleway:wght@200&family=Roboto+Slab:wght@500&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Tangerine&family=Trispace:wght@100&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid m-4">
+      <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./image/Web capture_5-11-2023_224757_.jpeg" alt="Logo" width="100" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+          <!-- list item-1 -->
+          <li class="nav-item dropdown p-2 mainNavItem">
+            <a class="nav-link dropdown-toggle active text-black fw-medium" aria-current="page" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item active bg-secondary-subtle text-warning" aria-current="page" href="#">Home
+                  1</a></li>
+              <li><a class="dropdown-item text-secondary " href="#">Home 2</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Home 3</a></li>
+            </ul>
+          </li>
+          <!-- list item-2 -->
+          <li class="nav-item dropdown p-2">
+            <a class="nav-link dropdown-toggle text-black fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-secondary" href="#">Shop Full Width</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Shop Sidebar</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Cart</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Checkout</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">My Account</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Payment Method</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Privacy Policy</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Shipping Method</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Order Tracking</a></li>
+            </ul>
+          </li>
+          <!-- list item-3 -->
+          <li class="nav-item dropdown p-2">
+            <a class="nav-link dropdown-toggle text-black fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-secondary" href="#">Simple Product</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Variable Product</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Group Product</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Affiliate Product</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Product Style 1</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Product Style 2</a></li>
+            </ul>
+          </li>
+          <!-- list item-4 -->
+          <li class="nav-item dropdown p-2">
+            <a class="nav-link dropdown-toggle text-black fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-secondary" href="#">Blog List</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Blog Single</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Blog Modern</a></li>
+            </ul>
+          </li>
+          <!-- list item-5 -->
+          <li class="nav-item dropdown p-2">
+            <a class="nav-link dropdown-toggle text-black fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Page
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-secondary" href="#">About</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">FAQ</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">404 Page</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Warranty And Services</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Term & Conditions</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Support Page</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Coming Soon</a></li>
+            </ul>
+          </li>
+          <!-- list item-6 -->
+          <li class="nav-item p-2">
+            <a class="nav-link text-black fw-medium" href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- list item-7 -->
+        <div class=" navbar d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass fa-xl navlink"></i></a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user fa-xl navlink"></i></a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link position-relative" href="#"><i class="fa-solid fa-cart-shopping fa-xl navlink"><span
+                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- 1st image -->
+        <div class="part1">
+          <div class="images ">
+
+            <img class="img1" data-aos="fade-down" data-aos-delay="100" src="./image/home1_layer2.png" alt="black lamp">
+
+            <img class="img2" data-aos="fade-down" data-aos-delay="500" src="./image/home1_layer1.png" alt="white lamp">
+          </div>
+
+          <div class="vl1" data-aos="fade-right" data-aos-delay="300">
+            &nbsp; &nbsp;LIGHTING <br>&nbsp;&nbsp; 2018</div>
+
+          <h1 class="heading1" data-aos="fade-right" data-aos-delay="750">
+            <b>ETNA</b>
+          </h1>
+
+          <h4 class="heading1-1" data-aos="fade-right" data-aos-delay="750">
+            <b>FROM <span class="heading1-2">&nbsp;$183.76</span></b>
+          </h4>
+
+          <p class="heading1-3" data-aos="fade-right" data-aos-delay="600">
+            <b>Shop Now</b>
+          </p>
+
+          <p class="heading1-4" data-aos="fade-up" data-aos-delay="850">
+            Design by <br><span class="heading1-5"><b>SHAHMA_FATHIMA</b></span></p>
+        </div>
+        <!-- - -->
+      </div>
+
+      <div class="carousel-item">
+        <!-- 2nd image -->
+        <div class="part2">
+          <div class="images">
+
+            <img class="img3" data-aos="zoom-in" data-aos-delay="100" src="./image/home1_layer.png" alt="white circle">
+
+            <img class="img4" data-aos="fade-down" data-aos-delay="100" src="./image/home1_layer7.png" alt="up lamp">
+
+            <img class="img5" data-aos="fade-right" data-aos-delay="300" src="./image/home1_layer8.png"
+              alt="plant table">
+
+            <img class="img6" data-aos="fade-left" data-aos-delay="350" src="./image/home1_layer9.png" alt="sofa chair">
+          </div>
+          <div class="vl2" data-aos="fade-right" data-aos-delay="300">
+            &nbsp;&nbsp;LIGHTING <br>&nbsp;&nbsp; 2018</div>
+
+          <h1 class="heading2" data-aos="fade-right" data-aos-delay="750">
+            <b>AURA</b>
+          </h1>
+
+          <h4 class="heading2-1" data-aos="fade-right" data-aos-delay="750">
+            <b>FROM <span class="heading2-2">&nbsp;$102.84</span></b>
+          </h4>
+
+          <p class="heading2-3" data-aos="fade-right" data-aos-delay="600">
+            <b>Shop Now</b>
+          </p>
+
+          <p class="heading2-4" data-aos="fade-up" data-aos-delay="850">
+            Design by <br><span class="heading2-5"><b>SHAHMA_FATHIMA</b></span></p>
+        </div>
+        <!-- - -->
+      </div>
+      <div class="carousel-item">
+        <!-- 3rd image -->
+        <div class="part3">
+          <div class="images">
+
+            <img class="img7" data-aos="zoom-in" data-aos-delay="100" src="./image/home1_layer6.png"
+              alt="white circle2">
+
+            <img class="img8" data-aos="fade-left" data-aos-delay="400" src="./image/home1_layer5.png" alt="right lamp">
+          </div>
+
+          <div class="vl3" data-aos="fade-right" data-aos-delay="300">
+            &nbsp;&nbsp;LIGHTING <br>&nbsp;&nbsp; 2018</div>
+
+          <h1 class="heading3" data-aos="fade-right" data-aos-delay="750">
+            <b>CHIATO</b>
+          </h1>
+
+          <h4 class="heading3-1" data-aos="fade-right" data-aos-delay="750">
+            <b>FROM <span class="heading3-2">&nbsp;$120.05</span></b>
+          </h4>
+
+          <p class="heading3-3" data-aos="fade-right" data-aos-delay="600">
+            <b>Shop Now</b>
+          </p>
+
+          <p class="heading3-4" data-aos="fade-up" data-aos-delay="850">
+            Design by <br><span class="heading3-5"><b>SHAHMA_FATHIMA</b></span></p>
+        </div>
+        <!-- - -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <!-- grid-1 -->
+  <div class="grid1">
+    <div class="gridImage1-1">
+      <img class="img9 container-fluid" src="./image/home1_cate1.jpg" alt="stools">
+      <h2 class="gridHeading1-1">Stools <br><span class="gridHeading1-2">5 items</span></h2>
+    </div>
+    <div class="gridImage1-2">
+      <img class="img10 container-fluid" src="./image/home1_cate2.jpg" alt="sofas">
+      <h2 class="gridHeading1-3">Sofas<br><span class="gridHeading1-4">5 items</span></h2>
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="text-center">
+    <h1>Trending This Week</h1>
+    <p class="text-secondary mb-5">Find a bright ideal to suit your taste with our great selection of suspension, wall,
+      floor and table lights.</p>
+  </div>
+
+  <!-- grid-2 -->
+  <div class="grid2 text-center">
+    <div class="gridImage2-1">
+      <img class="img11 container-fluid" src="./image/1-31-620x698.jpg" alt="teapot">
+      <p class="gridHeading2-1 mt-3 "><b>Teapot</b> <br><span class="text-secondary"> $120.05</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>
+    <div class="gridImage2-2">
+      <img class="img12 container-fluid" src="./image/1-23-620x698.jpg" alt="dining table">
+      <p class="gridHeading2-2 mt-3"><b>Miro Dining Table</b> <br><span class="text-secondary"> $113.70</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>
+    <div class="gridImage2-3">
+      <img class="img13 container-fluid" src="./image/1-17-620x698.jpg" alt="table lamp">
+      <p class="gridHeading2-3 mt-3"><b>Janus Table Lamp</b> <br><span class="text-secondary"> $161.29</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>
+    <div class="gridImage2-4">
+      <img class="img14 container-fluid" src="./image/1-15-620x698.jpg" alt="floor table">
+      <p class="gridHeading2-4 mt-3"><b>Discus Floor And Table</b> <br><span class="text-secondary"> $167.12</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+<h6 class="text-center glink">
+      <a class="text-black grid2link" href="">+ See All Products</a>
+</h6> 
+<hr class="mb-5">
+
+<!-- 2nd navbar -->
+<nav class="navbar2">
+  <h1>New Design</h1>
+  <li class="navli">
+    <a class="listitem li1" href="">All</a>
+    <a class="listitem" href="">Furnitures</a>
+    <a class="listitem" href="">Chairs</a>
+    <a class="listitem" href="">Lighting</a>
+    <a class="listitem" href="">Decor</a>
+  </li>
+</nav>
+<!-- - -->
+
+<!-- grid--3 -->
+<div class="grid3">
+  <div class="item1">
+    <img class="img15 container-fluid" src="./image/h8-img3.jpg" alt="sofa">
+    <h1 class="gridHeading3-1 text-center">All <br><span class="gridHeading3-11">17 items</span></h1>
+  </div>
+  <div class="grid3-1">
+    <div class="item2">
+      <img class="img16 container-fluid" src="./image/1-33-620x698.jpg" alt="mirror">
+      <p class="gridHeading3-2 mt-3 "><b>Linas Crew</b> <br><span class="text-secondary"> $183.76</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>
+    <div class="item3">
+      <img class="img17 container-fluid" src="./image/1-29-620x698.jpg" alt="mini shelf">
+      <p class="gridHeading3-3 mt-3 "><b>Sled Mini Sideboard</b> <br><span class="text-secondary"> $165.58</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+    </div>  
+    <div class="item4">
+      <img class="img18 container-fluid" src="./image/1-24-620x698.jpg" alt="mouse pad">
+      <p class="sale">Sale</p>
+      <p class="gridHeading3-4 mt-3 "><b>Mouse Pad</b> <br><span class="text-secondary"> $193.67-$179.99</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ SELECT OPTIONS</a>
+      </div>
+    </div>
+    <div class="item5">
+      <img class="img19 container-fluid" src="./image/1-21-620x698.jpg" alt="mega sofa">
+      <p class="gridHeading3-5 mt-3 "><b>Mega 2 Seater Sofa</b> <br><span class="text-secondary"> $160.71</span></p>
+      <div class="popUp">
+        <a class="text" href="">+ ADD TO CART</a>
+      </div>
+  </div>
+  </div>
+ 
+ 
+</div>
+
+<!-- middle part -->
+<div class="midpart">
+  <img class="img20 container-fluid" src="./image/FireShot Capture 019 - Auros - Furniture Elementor WooCommerce Theme Preview - ThemeForest_ - preview.themeforest.net-PhotoRoom.png" alt="mid section">
+  <img class="img21" src="./image/home1_image_layout_2.png" alt="LOLO">
+  <img class="img22" src="./image/home1_image_layout_1.png" alt="crafted">
+  <div class="vlmid">
+    &nbsp; &nbsp;LIGHTING <br>&nbsp;&nbsp; 2018</div>
+    <p class="linkmid">
+      <b><a class="midlink" href="">DISCOVER NOW</a></b>
+    </p>
+</div>
+
+ <!--  -->
+ <div class="text-center">
+  <h1>Our Blogs</h1>
+  <p class="text-secondary mb-5">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
+</div>
+
+<!-- blog -->
+<div class="grid4">
+  <div class="gridimage4-1">
+    <img class="img23 container-fluid mb-5" src="./image/blog12-600x390.jpg" alt="blog1">
+    <div>
+      <h4 class="mb-3">Should you use a Shave Cream or Shave Gel?</h4>
+      <p class="heading4-1">HEALTHY, OTHER /<span class="text-secondary"> September 11, 2018</span></p>
+        <hr class="hr1 mb-5">
+        <p class="heading4-1">The first thing you need to do is sit down and set your goals. Diana Scharf Hunt said “Goals are...</p>
+        <a class="link1" href="">+ READ MORE</a>
+    </div>
+  </div>
+  <div class="gridimage4-2">
+    <img class="img24 container-fluid mb-5" src="./image/blog11-600x390.jpg" alt="blog2">
+    <h4 class="mb-3">Face the New Year with The Real Shaving Company!</h4>
+    <p class="heading4-2">FASHION, HEALTHY /<span class="text-secondary"> September 10, 2018</span></p>
+      <hr class="hr2 mb-5">
+      <p class="heading4-2">The first thing you need to do is sit down and set your goals. Diana Scharf Hunt said “Goals are...</p>
+      <a class="link2" href="">+ READ MORE</a>
+  </div>
+  <div class="gridimage4-3">
+    <img class="img25 container-fluid mb-5" src="./image/blog10-600x390.jpg" alt="blog3">
+    <h4 class="mb-3">Face the New Year with The Real Shaving Company!</h4>
+    <p class="heading4-3">HEALTHY, OTHER /<span class="text-secondary"> September 10, 2018</span></p>
+      <hr class="hr3 mb-5">
+      <p class="heading4-3">The first thing you need to do is sit down and set your goals. Diana Scharf Hunt said “Goals are...</p>
+      <a class="link3" href="">+ READ MORE</a>
+  </div>
+  
+</div>
+
+<!--  -->
+<div class="footerhead container-fluid">
+<h1 class="text-center">Very good Design. Flexible. Fast Support. - <span class="font1">Steve John</span> <span class="font2">(customer)</span></h1>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="f1">
+    <a href=""><img class="mb-2" src="./image/Web capture_5-11-2023_224757_.jpeg" alt="logo" width="40%"></a>
+    <p class="fw-light">2593 Timbercrest Road, Chisana, Alaska Badalas United State</p>
+    <p class="fw-light">(+91)7-723-4608</p>
+    <a class="flink fw-light" href="">Aurosfurniture@domain.vn</a>
+  </div>
+  <div class="f2" >
+    <h6 class="mb-5">Our Products</h6>
+    <a class="flink2" href="">Checkout</a>
+  </div>
+  <div class="f3">
+    <h6 class="mb-5">Useful Links</h6>
+    <li class="fli mb-3"><a class="flink2" href="">About Us</a></li>
+    <li class="fli mb-3"><a class="flink2" href="">Blog</a></li>
+   <li class="fli mb-3"> <a class="flink2" href="">Contact Us</a></li>
+  </div>
+  <div class="f4">
+    <h6 class="mb-5">Newsletter</h6>
+    <a href="Stay Updated on all that's new add noteworthy"></a>
+   <div class="foot">
+     <input type="text" placeholder="Enter your e-mail...">
+    <a class=" flink3" href="">SUBSCRIBE</a>
+    <div class="footicon ">
+      <i class="fa-brands fa-facebook-f  pe-2 brand"></i>
+      <i class="fa-brands fa-twitter  pe-2 brand"></i>
+      <i class="fa-brands fa-instagram pe-2 brand"></i>
+      <i class="fa-brands fa-vk pe-2 brand"></i>
+    </div>
+    </div>
+  </div>
+</footer>
+<hr>
+<p class="ms-5 m-5">Copyright &copy 2022 <b>Auros <span class="text-warning">.</span></b> All rights reserved.</p>
+
+
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- AOS animate -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    startEvent: 'load',
+  });
+</script>
+<script>
+  $('#carouselExampleInterval').on('slide.bs.carousel',function()
+  {
+    AOS.refreshHard()
+  })
+</script>
+
+</html>
